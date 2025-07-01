@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="s.css">
+</head>
+<body>
+  YOU CAN PURCHACE A TABLETS HERE <br><br>
+  <button onclick="history.go(-1)">BACK</button><br>
+  <div id="orderdiv">
+
+    <div id="inputbase"><input type="text" id="input1" placeholder="SEARCH.."><button id="searchbtn">🔍</button></div><br><br>
+    ABOUT TABLETS:
+    
+  
+    </div>
+    <div id="p1">
+  </div>
+</body>
+<script>
+  alert('TYPE ALL IN CAPITALS')
+  var p1=document.getElementById('p1');
+  var input1=document.getElementById('input1');
+  var searchbtn=document.getElementById('searchbtn');
+   
+  p1.innerHTML='SEARCH TO VIEW THE TABLET';
+
+searchbtn.addEventListener('click',function(){
+  const vicks=['VICKS','VICKSACTION','VICKSACTION500','VICKS ACTION 500']
+
+    if(vicks.includes(input1.value)){
+       p1.innerHTML='THIS IS VICKSACTION 500 TB .IT IS THE INDIAN COMPANY IT HELPS TO CURE THE COUGH,FEVER,ETC. THIS TABLET PRICE IS 5'
+              
+  }
+    else if(input1.value==="paracetamol"){
+      p1.innerHTML='THIS IS PARACETAMOL .THIS IS MOSTLY USED IN INDIA FOR HEAD ACHE AND COUGH.THIS PRICE IS 10'
+  
+
+  }
+  else{
+    alert('none')
+  }
+  })
+  
+</script>
+</html>

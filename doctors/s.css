@@ -1,0 +1,104 @@
+#h1{
+    margin-left: 600px;
+}
+
+@media screen and (max-width:600px) {
+    #h{
+        font-size: 26px;
+        margin-left: 100px;
+    }
+        #orderdiv{
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        margin-left: 60px;
+    }
+    #p1{
+        margin-top: 20px;
+        box-shadow: 0 0 2px black;
+        width: 300px;
+        height: max-content;
+        margin-left: 10px;
+        text-align: center;
+        
+    }
+
+}
+@media screen and (min-width:600px){
+    #h{
+        font-size: 40px;
+        color: red;
+    }
+        #orderdiv{
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+    }
+    #p1{
+        margin-top: 20px;
+        box-shadow: 0 0 2px black;
+        width: 300px;
+        height: max-content;
+        margin-left: 50px;
+        text-align: center;
+        
+    }
+}
+@media screen and (min-width:748px) {
+    #h{
+        font-size: 45px;
+         margin-left: 50px;
+         color: blue;
+    }
+      #orderdiv{
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        margin-left: 200px;
+    }
+    #p1{
+        margin-top: 20px;
+        box-shadow: 0 0 2px black;
+        width: 300px;
+        height: max-content;
+        margin-left: 150px;
+        text-align: center;
+        
+    }
+}
+@media screen and (min-width:1024px) {
+    #h{
+        font-size: 60px;
+         margin-left: 500px;
+         color: rgb(255, 0, 183);
+    }
+    #orderdiv{
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        margin-left: 550px;
+    }
+    #p1{
+        margin-top: 20px;
+        box-shadow: 0 0 2px black;
+        width: 300px;
+        height: max-content;
+        margin-left: 500px;
+        text-align: center;
+        
+    }
+
+}
+#inputbase{
+    width: 198px;
+    height: 30px;
+    display: flex;
+    box-shadow: 0 0 2px black;
+    border: none;
+    border-radius: 3px;
+}
+#input1,#searchbtn{
+    border: none;
+    background: transparent;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOSPITALRAJESH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <h1>HOSPITALRAJESH</h1>
+    <nav id="navbar">
+      <button id="button1" onclick="window.location=this.value" value="condact.html">CONDACT</button>
+      <select  id="select1" onchange="window.location.href=this.value">
+        <option  hidden>SELECT</option>
+        <option value="doctors/gopal.html">GOPAL</option>
+        <option value="doctors/subash.html">SUBASH</option>
+      </select>
+      <button id="treatments">TREATMENTS</button>
+      <button id="jobs" >JOBS</button>
+      <button id="tablets">TABLETS</button>
+      <button id="about">ABOUT</button>
+    </nav>
+  </div>
+  <div id="screen">
+        <div id="gandhi">
+          <img src="/photos/gandhi.jpg" >
+        </div>
+        <p id="info1">HE IS GANDI WAS BORN ON INDIA AT 2 OCTOBER 1869 IN PORBANDAR.HE IS THE FOUNDER OF THE HOSPITALRAJESH AT 1943. THE WORTH OF THE 
+          HOSPITAL IS NOW APPROXIMATELY 400CRORES IS VERIFIED BY INDIAN GOVERNMENT.HE IS THE FREEDOM FIGTHER FOR INDIA.THANKYOU FOR READING THIS..  </p>
+  </div>
+</body>
+<script>
+  var button1=document.getElementById('button1');
+  var select1=document.getElementById('select1');
+  var treatments=document.getElementById('treatments');
+  var jobs=document.getElementById('jobs');
+  var tablets=document.getElementById('tablets');
+  var about=document.getElementById('about');
+
+treatments.addEventListener('click',function(){
+  window.location.href='doctors/treatments.html';
+})
+jobs.addEventListener('click',function(){
+  window.location.href='jobs.html';
+})
+tablets.addEventListener('click',function(){
+  window.location.href='doctors/tablets.html';
+})
+
+</script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONDACT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="condact">
+        <DIV   id="form"  >
+            
+            <input type="text" name="NAME" id="username" placeholder="NAME">
+            <br>
+            <textarea  id="message" cols="30" rows="4" length="100" placeholder="TYPE MESSAGE AND EMAIL HERE" naem></textarea>
+            <br><br>
+            <button id="send">SEND</button>
+            <br><br>
+            <button id="send1">BACK</button>
+        </DIV>
+    </div>
+</body>
+<script>
+    var username=document.getElementById('username');
+    var message=document.getElementById('message');
+    var send=document.getElementById('send');
+    var send1=document.getElementById('send1');
+    send.addEventListener('click',function(){
+        if(username.value.length < 5 ){
+            alert('NAME MUST BE 5 OR MORE')
+        }
+        else if(message.value.length < 5){
+            alert('MESSAGE MUST BE 5 OR MORE')
+
+        }
+        else{
+            send.style.backgroundSize='300% 300%';
+            send.style.background='green';
+            send.style.boxShadow='0 0 10px green,0 0 5px black,0 0 20px green';
+            send.style.transition='3s';
+            setTimeout(() => {
+               alert('MESSAGE SENTED SUCCESFULLY') 
+            }, 3000);
+            setTimeout(()=>{
+                username.value='';
+                message.value='';
+                send.style.backgroundSize='30% 30%';
+                send.style.background='red';
+                send.style.boxShadow='0 0 10px red,0 0 5px black,0 0 20px red';
+                send.style.transition='1s';
+            },5000);
+            
+        }
+    });
+    send1.addEventListener('click',function(){
+        history.go(-1);
+    });
+</script>
+</html>
